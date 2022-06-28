@@ -5,9 +5,10 @@
     vertical-align: middle;
 }
 
-/* body {
-    line-height: 1.5px;
-} */
+html {
+    scroll-behavior: smooth;
+}
+
 
 .main-container {
     max-width: 1300px;
@@ -56,11 +57,11 @@ h1 {
 }
 
 .colum-nav {
-    padding: 66px 0px 64px 0px;
+    padding: 64px 0px 64px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 50%; */
+
 
 }
 
@@ -69,6 +70,8 @@ h1 {
     background-color: black;
     color: #fff;
     border: none;
+    text-align: center;
+    text-decoration: none;
     padding-top: 18.5px;
     padding-bottom: 18.5px;
     font-size: 15px;
@@ -199,33 +202,40 @@ h1 {
 }
 
 .right-2 {
-    padding: 64px 0.15px 64px 16px;
-
-
+    padding: 66px 16px 64px 17px;
 }
+
 
 .head-4>h2 {
     font-family: 'Segoe UI', sans-serif;
     font-size: 30px;
     text-transform: capitalize;
     font-weight: 400;
-    margin: 10px 0px;
+    margin: 10px 0px -1px 14px;
     text-align: center;
+    padding-right: 15px;
 }
 
 .para-4>p {
     font-family: Verdana, sans-serif;
     font-size: 15px;
     text-align: center;
-    margin: 15px 0px;
+    margin: 18px 1px 10px 15px;
+    padding-top: 3px;
+    padding-right: 15px
 }
 
 .tables>table {
-    padding: 0.1em 30px 0.1em 16px;
     border-spacing: inherit;
-    line-height: 25px;
-    width: 100%;
+    line-height: 22.5555px;
+    width: 99.55555%;
 
+
+}
+
+.tables {
+    padding-left: 15px;
+    padding-right: 14px;
 }
 
 .table-left-P {
@@ -236,12 +246,22 @@ table,
 th,
 td {
     padding: 8px 0px 8px 0px;
-    text-transform: capitalize;
     font-size: 15px;
     font-family: Verdana, sans-serif;
     text-align: center;
     text-align: left;
     vertical-align: top;
+
+}
+
+
+tr>.T_C_W_R {
+    padding-left: 32px;
+}
+
+tr,
+.T_C_W_R_2 {
+    padding-right: 20px;
 }
 
 table>tr,
@@ -249,6 +269,7 @@ table>tr,
     background-color: #fff;
     color: black;
 }
+
 
 /* step 3 */
 .container-3 {
@@ -320,10 +341,20 @@ table>tr,
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 25px 16px;
+    padding: 35px 16px 32px 16px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+}
+
+.btn,
+button>a {
+    text-decoration: none;
+    color: white;
 }
 
 .btn>button {
+
+    margin-top: 14px;
     padding: 10px 16px;
     float: right;
     font-size: 15px;
@@ -347,15 +378,17 @@ label {
 }
 
 input {
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-bottom: 1px solid silver;
-    margin-bottom: 15px;
+    margin-top: 2px;
+    margin-bottom: 3px
 }
 
 .container-4 {
     background-color: #000;
-    padding: 17px 16px;
+    padding: 18px 16px;
+    height: 85px;
 }
 
 .container-4>footer {
@@ -366,8 +399,9 @@ input {
 
 }
 
-footer a {
+footer p>a {
     color: #fff;
+    vertical-align: baseline;
 }
 
 /* responsive */
@@ -389,5 +423,17 @@ footer a {
     .right-2,
     .right-3 {
         width: 100%;
+    }
+
+    .img_1 {
+        display: none;
+    }
+
+    .left-1 {
+        width: 100%;
+    }
+
+    tr>.T_C_W_R {
+        padding-left: 0px;
     }
 }

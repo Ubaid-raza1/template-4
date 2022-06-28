@@ -13,10 +13,10 @@
         <div class="left-1">
           <div class="head-1"><h1>my logo</h1></div>
           <div class="colum-nav">
-            <button class="nav home">home</button>
-            <button class="nav mywork">my work</button>
-            <button class="nav resume">resume</button>
-            <button class="nav contact">contact</button>
+            <button class="nav home"><a href="">home</a></button>
+            <a href="#my_work" class="nav mywork">my work</a>
+            <a class="nav resume" href="#resume">resume</a>
+            <a class="nav contact" href="#Contact">contact</a>
           </div>
         </div>
         <div class="right-1">
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="container-2">
-        <div class="left-2">
+        <div class="left-2" id="my_work">
           <div class="head-and-Para">
             <div class="head-3">
               <h2>my work</h2>
@@ -48,19 +48,19 @@
             <div class="left-img">
               <img src="./images/coffee (1).jpg" alt="" />
               <img src="./images/workbench (1).jpg" alt="" />
-              <img src="./images/sound.jpg" alt="" />
+              <img src="./images/sound.jpg" alt="" class="img_1" />
             </div>
             <div class="right-img">
-              <img src="./images/workbench (1).jpg" alt="" />
-              <img src="./images/coffee (1).jpg" alt="" />
-              <img src="./images/workbench (1).jpg" alt="" />
+              <img src="./images/workbench (1).jpg" alt="" class="img_1" />
+              <img src="./images/coffee (1).jpg" alt="" class="img_1" />
+              <img src="./images/workbench (1).jpg" alt="" class="img_1" />
             </div>
           </div>
           <div class="para-3">
             <p>Just call me awesome.</p>
           </div>
         </div>
-        <div class="right-2">
+        <div class="right-2" id="resume">
           <div class="head-4">
             <h2>resume</h2>
           </div>
@@ -70,48 +70,54 @@
           <div class="tables">
             <table>
               <tr>
-                <th class="table-left-P">year</th>
-                <th>title</th>
-                <th>where</th>
+                <th class="table-left-P">Year</th>
+                <th class="T_C_W_R">Title</th>
+                <th class="T_C_W_R_2">Where</th>
               </tr>
               <tr class="table-back">
                 <td class="table-left-P">2012- <br />2016</td>
-                <td>The rest is history..</td>
-                <td>Lorem ipsum</td>
+                <td class="T_C_W_R">The rest is history..</td>
+                <td class="T_C_W_R_2">Lorem ipsum</td>
               </tr>
               <tr>
                 <td class="table-left-P">2009-<br />2012</td>
-                <td>Started my own company</td>
-                <td>My Garage</td>
+                <td class="T_C_W_R">Started my own company</td>
+                <td class="T_C_W_R_2">My Garage</td>
               </tr>
               <tr class="table-back">
                 <td class="table-left-P">2008-<br />2009</td>
-                <td>Started working for Lorem</td>
-                <td>London, UK</td>
+                <td class="T_C_W_R">Started working for Lorem</td>
+                <td class="T_C_W_R_2">London, UK</td>
               </tr>
               <tr>
                 <td class="table-left-P">2005-<br />2008</td>
-                <td>
+                <td class="T_C_W_R">
                   Degree in Bachelor of<br />
                   Design
                 </td>
-                <td>Harvard, USA</td>
+                <td class="T_C_W_R_2">Harvard, USA</td>
               </tr>
               <tr class="table-back">
                 <td class="table-left-P">2002-<br />2005</td>
-                <td>
+                <td class="T_C_W_R">
                   Degree in Bachelor of<br />
                   Business
                 </td>
-                <td>RMIT University, Melbourne, Australia</td>
+                <td class="T_C_W_R_2">
+                  RMIT University, Melbourne, <br />
+                  Australia
+                </td>
               </tr>
               <tr>
                 <td class="table-left-P">2002-<br />2005</td>
-                <td>
+                <td class="T_C_W_R">
                   Degree in Bachelor of<br />
                   Business
                 </td>
-                <td>RMIT University, Melbourne, Australia</td>
+                <td class="T_C_W_R_2">
+                  RMIT University, Melbourne, <br />
+                  Australia
+                </td>
               </tr>
             </table>
           </div>
@@ -129,7 +135,7 @@
             <p>test@test.com</p>
           </div>
         </div>
-        <div class="right-3">
+        <div class="right-3" id="Contact">
           <div class="right-container">
             <div class="head-6">
               <h1>Contact</h1>
@@ -153,7 +159,9 @@
         </div>
       </div>
       <div class="container-4">
-        <footer>Powered by <a href="">w3.css</a></footer>
+        <footer>
+          <p>Powered by <a href="">w3.css</a></p>
+        </footer>
       </div>
     </div>
   </body>
